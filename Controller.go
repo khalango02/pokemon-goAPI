@@ -43,7 +43,7 @@ func GetPokemons(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			panic(err.Error())
 		}
-		
+
 		json.NewEncoder(w).Encode(tag)
 	}
 }
